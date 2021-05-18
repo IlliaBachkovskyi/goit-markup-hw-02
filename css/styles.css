@@ -1,15 +1,131 @@
-/* :root{
-    --
-} */
+:root {
+  --aiming-color: #2196f3;
+  --main-text-color: #212121;
+  /* --color:000 ; */
+  --main-fonts: "Roboto", sans-serif;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: var(--main-fonts);
+  font-style: normal;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 /* HEADER STYLES */
-
-
-
-
+.logo {
+  color: #000000;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+}
+.logoFirstPart {
+  color: var(--aiming-color);
+}
+.linkHeader {
+  font-family: var(--main-fonts);
+  font-style: normal;
+  font-weight: 500;
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+}
+.linkHeader:hover,
+.linkHeader:focus {
+  color: var(--aiming-color);
+}
 /* HEADER STYLES */
+
+/* MAIN */
+
+/* Heading */
+.sectionHeading {
+  background-color: #2f303a;
+  width: 1600;
+  height: 600;
+  padding: 200px 452px 280px 452px;
+}
+.sectionHeadingTitle {
+  width: 696;
+  height: 120;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 900;
+  text-align: center;
+}
+.singLink {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  padding: 10px 32px;
+  background-color: var(--aiming-color);
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+}
+/* Features */
+.sectionFeatures {
+  width: 1170px;
+  height: 101px;
+  padding: 0;
+}
+.sectionFeaturesTitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  color: #212121;
+}
+.sectionFeaturesText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  color: #757575;
+}
+.sectionFeatures li {
+  width: 270px;
+  height: 101px;
+  display: inline-block;
+}
+
+/* AboutUs */
+.sectionaboutUs {
+  width: 1170px;
+  height: 386px;
+}
+.aboutUsTitle {
+  width: 376px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: var(--main-text-color);
+}
+.sectionaboutUs li {
+  width: 370px;
+  height: 294px;
+  display: inline-block;
+}
+
+/* MAIN */
