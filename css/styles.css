@@ -5,6 +5,8 @@
   --background-color: #2f303a;
   --body-color: #ffffff;
   --border-line-color: #eeeeee;
+  --background-sing-link-hover: #188ce8;
+  --background-color-our-team-section: #f5f4fa;
   --main-fonts: 'Roboto', sans-serif;
 }
 
@@ -29,8 +31,9 @@ a {
 }
 
 .container {
-  width: 1600px;
+  width: 1200px;
   margin: 0 auto;
+  padding: auto 15px;
 }
 
 .visually-hidden {
@@ -68,6 +71,14 @@ a {
 .link-header:focus {
   color: var(--aiming-color);
 }
+/* Обозначение текущей страницы */
+.highlight-link {
+  color: var(--aiming-color);
+}
+.mail-header,
+.tel-header {
+  color: var(--description-text-color);
+}
 /* link-Header */
 /* HEADER-STYLES(index+portfolio) */
 
@@ -92,6 +103,7 @@ a {
   text-transform: uppercase;
 }
 .sing-link {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -102,26 +114,28 @@ a {
   border: 0;
   border-radius: 4px;
   display: block;
-  margin: 0 auto 106px;
   cursor: pointer;
 }
 .sing-link:hover,
 .sing-link:focus {
-  background-color: #188ce8;
+  background-color: var(--background-sing-link-hover);
 }
 /* section-Hero */
 
 /* section-Features */
 .section-features-title {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
-  color: #212121;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  text-transform: uppercase;
 }
 .section-features-text {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--description-text-color);
 }
 /* section-Features */
 
@@ -138,7 +152,7 @@ a {
 /* section-Our-Team */
 .section-our-team {
   /* text-align: center; */
-  background-color: #f5f4fa;
+  background-color: var(--background-color-our-team-section);
 }
 .section-our-team h2 {
   font-size: 36px;
@@ -197,11 +211,12 @@ a {
 /* PORTFOLIO-STYLES */
 /* button-decoration-nav-Portfolio  */
 .sing-link-portfolio {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   padding: 10px 32px;
-  background-color: #f5f4fa;
+  background-color: var(--background-color-our-team-section);
   border: 0;
   border-radius: 4px;
   display: block;
