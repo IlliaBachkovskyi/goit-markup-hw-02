@@ -17,6 +17,7 @@
 }
 
 body {
+  margin: 0;
   font-family: var(--main-fonts);
   font-style: normal;
   color: var(--main-text-color);
@@ -24,6 +25,8 @@ body {
 
 ul {
   list-style: none;
+  /* margin: 0;
+  padding: 0; */
 }
 
 a {
@@ -90,17 +93,22 @@ a {
 /* section-Hero */
 .section-hero {
   background-color: var(--background-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .section-hero-title {
-  display: block;
+  margin: auto auto 30px auto;
+  width: 696px;
   color: var(--body-color);
-  align-items: center;
+  /* align-items: center; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  border: yellow 1px solid;
 }
 .sing-link {
   font-family: inherit;
@@ -113,7 +121,7 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
-  display: block;
+  display: inline-block;
   cursor: pointer;
 }
 .sing-link:hover,
